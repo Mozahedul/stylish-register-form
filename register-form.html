@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Registration form</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Demo project">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="form-layout">
+        <div class="form-heading">Registration Form</div>
+        <div class="account-have">
+            <p class="signin">Already have an account? <a href="#" class="signin-txt">Signin</a></p>
+        </div>
+        <div class="sign-with">
+            <p>Or signin with</p>
+        </div>
+        <div class="social-button">
+            <a href="#" class="social-md"><i class="fab fa-facebook-f icon-awesome"></i></a>
+            <a href="#" class="social-md"><i class="fab fa-twitter icon-awesome"></i></a>
+            <a href="#" class="social-md"><i class="fab fa-pinterest-p icon-awesome"></i></a>
+            <a href="#" class="social-md"><i class="fab fa-linkedin-in icon-awesome"></i></a>
+        </div>
+        <hr class="hr-style">
+        <form>
+            <div class="form-style">
+                <label class="lbl-form">First Name</label>
+                <input type="text" class="input-field" placeholder="Elton" required>
+            </div>
+            <div class="form-style">
+                <label class="lbl-form">Last Name</label>
+                <input type="text" class="input-field" placeholder="John" required>
+            </div>
+            <div class="form-style">
+                <label class="lbl-form">User Name</label>
+                <input type="text" class="input-field" placeholder="elton101" required>
+            </div>
+            <div class="form-style">
+                <label class="lbl-form">Email</label>
+                <input type="email" class="input-field" placeholder="eltonj@gmail.com" onkeyup="this.value=this.value.toLowerCase();" required>
+            </div>
+            <div class="form-style">
+                <label class="lbl-form">Password</label>
+                <input type="password" class="input-field" placeholder="Minimum 6 characters" required minlength="6" maxlength="30">
+            </div>
+            <div class="radio-container">
+                <div class="radio-left">
+                    <label class="gender-lbl">Gender</label>
+                </div>
+                <div class="radio-right">
+                    <label class="radio-style">Male
+                        <input type="radio" name="radio">
+                        <span class="radio-mark"></span>
+                    </label>
+                    <label class="radio-style">Female
+                        <input type="radio" name="radio">
+                        <span class="radio-mark"></span>
+                    </label>
+                    <label class="radio-style">Other
+                        <input type="radio" name="radio">
+                        <span class="radio-mark"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="form-style">
+                <label class="lbl-form">Date of Birth</label>
+                <input type="text" class="input-field" placeholder="1975/10/21" required>
+            </div>
+            <div class="form-style">
+                <label class="lbl-form">Address</label>
+                <textarea cols="30" rows="3" class="txt-area" placeholder="Write your address here ..." required></textarea>
+            </div>
+            <label class="label-style">I agree to the Terms & Conditions
+                <input type="checkbox" required>
+                <span class="checkmark"></span>
+            </label>
+            <div class="submit">
+                <input type="submit" value="Create an account" class="input-sub">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
